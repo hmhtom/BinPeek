@@ -27,6 +27,8 @@
 		01A000000000000000000012 /* WidgetSharedPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000014 /* WidgetSharedPayload.swift */; };
 		01A000000000000000000013 /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000015 /* SharedConstants.swift */; };
 		01A000000000000000000014 /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000015 /* SharedConstants.swift */; };
+		01A000000000000000000024 /* WidgetCollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000012 /* WidgetCollectionItem.swift */; };
+		01A000000000000000000025 /* WidgetSharedPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000014 /* WidgetSharedPayload.swift */; };
 		01A000000000000000000015 /* TorontoOpenDataResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000016 /* TorontoOpenDataResource.swift */; };
 		01A000000000000000000016 /* TorontoScheduleResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000017 /* TorontoScheduleResource.swift */; };
 		01A000000000000000000017 /* TorontoCollectionScheduleRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000018 /* TorontoCollectionScheduleRecord.swift */; };
@@ -90,6 +92,8 @@
 		01B000000000000000000013 /* WidgetDisplayState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetDisplayState.swift; sourceTree = "<group>"; };
 		01B000000000000000000014 /* WidgetSharedPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSharedPayload.swift; sourceTree = "<group>"; };
 		01B000000000000000000015 /* SharedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedConstants.swift; sourceTree = "<group>"; };
+		01B000000000000000000025 /* BinPeek.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BinPeek.entitlements; sourceTree = "<group>"; };
+		01B000000000000000000026 /* BinPeekWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BinPeekWidget.entitlements; sourceTree = "<group>"; };
 		01B000000000000000000016 /* TorontoOpenDataResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorontoOpenDataResource.swift; sourceTree = "<group>"; };
 		01B000000000000000000017 /* TorontoScheduleResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorontoScheduleResource.swift; sourceTree = "<group>"; };
 		01B000000000000000000018 /* TorontoCollectionScheduleRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorontoCollectionScheduleRecord.swift; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 				01D000000000000000000007 /* ViewModels */,
 				01D000000000000000000008 /* Models */,
 				01D000000000000000000009 /* Services */,
+				01B000000000000000000025 /* BinPeek.entitlements */,
 				01B000000000000000000006 /* Assets.xcassets */,
 			);
 			path = BinPeek;
@@ -156,6 +161,7 @@
 				01B000000000000000000012 /* WidgetCollectionItem.swift */,
 				01B000000000000000000013 /* WidgetDisplayState.swift */,
 				01B000000000000000000014 /* WidgetSharedPayload.swift */,
+				01B000000000000000000026 /* BinPeekWidget.entitlements */,
 				01B00000000000000000000C /* Info.plist */,
 				01B000000000000000000009 /* Assets.xcassets */,
 			);
@@ -333,6 +339,8 @@
 				01A00000000000000000000D /* CollectionSchedule.swift in Sources */,
 				01A00000000000000000000E /* CollectionItem.swift in Sources */,
 				01A00000000000000000000F /* CollectionDisplayState.swift in Sources */,
+				01A000000000000000000024 /* WidgetCollectionItem.swift in Sources */,
+				01A000000000000000000025 /* WidgetSharedPayload.swift in Sources */,
 				01A000000000000000000013 /* SharedConstants.swift in Sources */,
 				01A000000000000000000015 /* TorontoOpenDataResource.swift in Sources */,
 				01A000000000000000000016 /* TorontoScheduleResource.swift in Sources */,
@@ -413,6 +421,7 @@
 		01I000000000000000000003 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BinPeek/BinPeek.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
@@ -438,6 +447,7 @@
 		01I000000000000000000004 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BinPeek/BinPeek.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
@@ -464,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = BinPeekWidget/BinPeekWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
@@ -490,6 +501,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = BinPeekWidget/BinPeekWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
