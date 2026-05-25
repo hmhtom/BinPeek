@@ -76,7 +76,7 @@ struct BinPeekWidgetView: View {
 }
 
 struct BinPeekWidget: Widget {
-    let kind = "BinPeekWidget"
+    let kind = SharedConstants.binPeekWidgetKind
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: BinPeekWidgetProvider()) { entry in
