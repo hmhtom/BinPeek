@@ -12,19 +12,22 @@ struct SelectedScheduleRefreshService {
     private let recordFilter: TorontoScheduleRecordFilter
     private let parser: TorontoScheduleParser
     private let selector: CollectionScheduleSelector
+    private let widgetSharedPayloadWriter: WidgetSharedPayloadWriter
 
     init(
         storageManager: StorageManager = .shared,
         scheduleService: TorontoScheduleService = TorontoScheduleService(),
         recordFilter: TorontoScheduleRecordFilter = TorontoScheduleRecordFilter(),
         parser: TorontoScheduleParser = TorontoScheduleParser(),
-        selector: CollectionScheduleSelector = CollectionScheduleSelector()
+        selector: CollectionScheduleSelector = CollectionScheduleSelector(),
+        widgetSharedPayloadWriter: WidgetSharedPayloadWriter = WidgetSharedPayloadWriter()
     ) {
         self.storageManager = storageManager
         self.scheduleService = scheduleService
         self.recordFilter = recordFilter
         self.parser = parser
         self.selector = selector
+        self.widgetSharedPayloadWriter = widgetSharedPayloadWriter
     }
 
     func refreshSelectedSchedule(referenceDate: Date = Date()) async throws -> CollectionSchedule {
@@ -48,6 +51,7 @@ struct SelectedScheduleRefreshService {
         }
 
         storageManager.saveSchedule(schedule)
+        _ = widgetSharedPayloadWriter.saveSchedulePayload(schedule)
         return schedule
     }
 }
