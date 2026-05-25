@@ -44,6 +44,7 @@
 		01A000000000000000000021 /* TorontoScheduleRecordFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000022 /* TorontoScheduleRecordFilter.swift */; };
 		01A000000000000000000022 /* CollectionScheduleSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000023 /* CollectionScheduleSelector.swift */; };
 		01A000000000000000000023 /* SelectedScheduleRefreshService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000024 /* SelectedScheduleRefreshService.swift */; };
+		01A000000000000000000026 /* WidgetSharedPayloadWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000027 /* WidgetSharedPayloadWriter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		01B000000000000000000022 /* TorontoScheduleRecordFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorontoScheduleRecordFilter.swift; sourceTree = "<group>"; };
 		01B000000000000000000023 /* CollectionScheduleSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionScheduleSelector.swift; sourceTree = "<group>"; };
 		01B000000000000000000024 /* SelectedScheduleRefreshService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedScheduleRefreshService.swift; sourceTree = "<group>"; };
+		01B000000000000000000027 /* WidgetSharedPayloadWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSharedPayloadWriter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 				01B000000000000000000022 /* TorontoScheduleRecordFilter.swift */,
 				01B000000000000000000023 /* CollectionScheduleSelector.swift */,
 				01B000000000000000000024 /* SelectedScheduleRefreshService.swift */,
+				01B000000000000000000027 /* WidgetSharedPayloadWriter.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				01A000000000000000000021 /* TorontoScheduleRecordFilter.swift in Sources */,
 				01A000000000000000000022 /* CollectionScheduleSelector.swift in Sources */,
 				01A000000000000000000023 /* SelectedScheduleRefreshService.swift in Sources */,
+				01A000000000000000000026 /* WidgetSharedPayloadWriter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
