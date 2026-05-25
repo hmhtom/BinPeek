@@ -44,7 +44,7 @@ final class StorageManager {
             return nil
         }
 
-        StoredAddress(
+        return StoredAddress(
             streetNumber: streetNumber,
             streetName: streetName,
             postalCode: postalCode
