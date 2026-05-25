@@ -12,13 +12,24 @@ struct BinPeekWidgetProvider: TimelineProvider {
     }
 
     func getSnapshot(in context: Context, completion: @escaping (BinPeekWidgetEntry) -> Void) {
-        completion(BinPeekWidgetEntry(date: Date(), payload: nil))
+        completion(BinPeekWidgetEntry(date: Date(), payload: loadPayload()))
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<BinPeekWidgetEntry>) -> Void) {
-        let entry = BinPeekWidgetEntry(date: Date(), payload: nil)
+        let entry = BinPeekWidgetEntry(date: Date(), payload: loadPayload())
         let nextUpdate = Calendar.current.date(byAdding: .hour, value: 6, to: Date()) ?? Date()
         completion(Timeline(entries: [entry], policy: .after(nextUpdate)))
+    }
+
+    private func loadPayload() -> WidgetSharedPayload? {
+        guard
+            let defaults = UserDefaults(suiteName: SharedConstants.appGroupID),
+            let data = defaults.data(forKey: SharedConstants.widgetSharedPayloadKey)
+        else {
+            return nil
+        }
+
+        return try? JSONDecoder().decode(WidgetSharedPayload.self, from: data)
     }
 }
 
