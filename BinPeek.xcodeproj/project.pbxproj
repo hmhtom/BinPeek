@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01A000000000000000000001 /* BinPeekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000001 /* BinPeekApp.swift */; };
+		01A000000000000000000002 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000002 /* StorageManager.swift */; };
+		01A000000000000000000003 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000003 /* HomeView.swift */; };
+		01A000000000000000000004 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000004 /* AddressView.swift */; };
+		01A000000000000000000005 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000005 /* SettingsView.swift */; };
+		01A000000000000000000006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000006 /* Assets.xcassets */; };
+		01A000000000000000000007 /* BinPeekWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000007 /* BinPeekWidgetBundle.swift */; };
+		01A000000000000000000008 /* BinPeekWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000008 /* BinPeekWidget.swift */; };
+		01A000000000000000000009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000009 /* Assets.xcassets */; };
+		01A00000000000000000000A /* BinPeekWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 01B00000000000000000000A /* BinPeekWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		01A00000000000000000000B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B00000000000000000000D /* HomeViewModel.swift */; };
+		01A00000000000000000000C /* AddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B00000000000000000000E /* AddressViewModel.swift */; };
+		01A00000000000000000000D /* CollectionSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B00000000000000000000F /* CollectionSchedule.swift */; };
+		01A00000000000000000000E /* CollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000010 /* CollectionItem.swift */; };
+		01A00000000000000000000F /* CollectionDisplayState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000011 /* CollectionDisplayState.swift */; };
+		01A000000000000000000010 /* WidgetCollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000012 /* WidgetCollectionItem.swift */; };
+		01A000000000000000000011 /* WidgetDisplayState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000013 /* WidgetDisplayState.swift */; };
+		01A000000000000000000012 /* WidgetSharedPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000014 /* WidgetSharedPayload.swift */; };
+		01A000000000000000000013 /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000015 /* SharedConstants.swift */; };
+		01A000000000000000000014 /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000015 /* SharedConstants.swift */; };
+		01A000000000000000000015 /* TorontoOpenDataResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000016 /* TorontoOpenDataResource.swift */; };
+		01A000000000000000000016 /* TorontoScheduleResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000017 /* TorontoScheduleResource.swift */; };
+		01A000000000000000000017 /* TorontoCollectionScheduleRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000018 /* TorontoCollectionScheduleRecord.swift */; };
+		01A000000000000000000018 /* TorontoScheduleParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000019 /* TorontoScheduleParser.swift */; };
+		01A000000000000000000019 /* TorontoOpenDataResourceResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B00000000000000000001A /* TorontoOpenDataResourceResolver.swift */; };
+		01A00000000000000000001A /* TorontoCollectionScheduleDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B00000000000000000001B /* TorontoCollectionScheduleDTO.swift */; };
+		01A00000000000000000001B /* TorontoScheduleRecordsDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B00000000000000000001C /* TorontoScheduleRecordsDecoder.swift */; };
+		01A00000000000000000001C /* TorontoOpenDataPackageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B00000000000000000001D /* TorontoOpenDataPackageDTO.swift */; };
+		01A00000000000000000001D /* TorontoOpenDataPackageDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B00000000000000000001E /* TorontoOpenDataPackageDecoder.swift */; };
+		01A00000000000000000001E /* TorontoOpenDataClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B00000000000000000001F /* TorontoOpenDataClient.swift */; };
+		01A00000000000000000001F /* TorontoScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000020 /* TorontoScheduleService.swift */; };
+		01A000000000000000000020 /* CollectionCalendarOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000021 /* CollectionCalendarOption.swift */; };
+		01A000000000000000000021 /* TorontoScheduleRecordFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000022 /* TorontoScheduleRecordFilter.swift */; };
+		01A000000000000000000022 /* CollectionScheduleSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000023 /* CollectionScheduleSelector.swift */; };
+		01A000000000000000000023 /* SelectedScheduleRefreshService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B000000000000000000024 /* SelectedScheduleRefreshService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01C000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01D000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01E000000000000000000002;
+			remoteInfo = BinPeekWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		01F000000000000000000001 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				01A00000000000000000000A /* BinPeekWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		01B000000000000000000001 /* BinPeekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinPeekApp.swift; sourceTree = "<group>"; };
+		01B000000000000000000002 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		01B000000000000000000003 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		01B000000000000000000004 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		01B000000000000000000005 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		01B000000000000000000006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01B000000000000000000007 /* BinPeekWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinPeekWidgetBundle.swift; sourceTree = "<group>"; };
+		01B000000000000000000008 /* BinPeekWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinPeekWidget.swift; sourceTree = "<group>"; };
+		01B000000000000000000009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01B00000000000000000000A /* BinPeekWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BinPeekWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B00000000000000000000B /* BinPeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BinPeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B00000000000000000000C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01B00000000000000000000D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		01B00000000000000000000E /* AddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewModel.swift; sourceTree = "<group>"; };
+		01B00000000000000000000F /* CollectionSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSchedule.swift; sourceTree = "<group>"; };
+		01B000000000000000000010 /* CollectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionItem.swift; sourceTree = "<group>"; };
+		01B000000000000000000011 /* CollectionDisplayState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDisplayState.swift; sourceTree = "<group>"; };
+		01B000000000000000000012 /* WidgetCollectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetCollectionItem.swift; sourceTree = "<group>"; };
+		01B000000000000000000013 /* WidgetDisplayState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetDisplayState.swift; sourceTree = "<group>"; };
+		01B000000000000000000014 /* WidgetSharedPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSharedPayload.swift; sourceTree = "<group>"; };
+		01B000000000000000000015 /* SharedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedConstants.swift; sourceTree = "<group>"; };
+		01B000000000000000000016 /* TorontoOpenDataResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorontoOpenDataResource.swift; sourceTree = "<group>"; };
+		01B000000000000000000017 /* TorontoScheduleResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorontoScheduleResource.swift; sourceTree = "<group>"; };
+		01B000000000000000000018 /* TorontoCollectionScheduleRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorontoCollectionScheduleRecord.swift; sourceTree = "<group>"; };
+		01B000000000000000000019 /* TorontoScheduleParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorontoScheduleParser.swift; sourceTree = "<group>"; };
+		01B00000000000000000001A /* TorontoOpenDataResourceResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorontoOpenDataResourceResolver.swift; sourceTree = "<group>"; };
+		01B00000000000000000001B /* TorontoCollectionScheduleDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorontoCollectionScheduleDTO.swift; sourceTree = "<group>"; };
+		01B00000000000000000001C /* TorontoScheduleRecordsDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorontoScheduleRecordsDecoder.swift; sourceTree = "<group>"; };
+		01B00000000000000000001D /* TorontoOpenDataPackageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorontoOpenDataPackageDTO.swift; sourceTree = "<group>"; };
+		01B00000000000000000001E /* TorontoOpenDataPackageDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorontoOpenDataPackageDecoder.swift; sourceTree = "<group>"; };
+		01B00000000000000000001F /* TorontoOpenDataClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorontoOpenDataClient.swift; sourceTree = "<group>"; };
+		01B000000000000000000020 /* TorontoScheduleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorontoScheduleService.swift; sourceTree = "<group>"; };
+		01B000000000000000000021 /* CollectionCalendarOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCalendarOption.swift; sourceTree = "<group>"; };
+		01B000000000000000000022 /* TorontoScheduleRecordFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorontoScheduleRecordFilter.swift; sourceTree = "<group>"; };
+		01B000000000000000000023 /* CollectionScheduleSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionScheduleSelector.swift; sourceTree = "<group>"; };
+		01B000000000000000000024 /* SelectedScheduleRefreshService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedScheduleRefreshService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01F000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01F000000000000000000003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01D000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				01D000000000000000000003 /* BinPeek */,
+				01D000000000000000000004 /* BinPeekWidget */,
+				01B000000000000000000015 /* SharedConstants.swift */,
+				01D000000000000000000005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01D000000000000000000003 /* BinPeek */ = {
+			isa = PBXGroup;
+			children = (
+				01B000000000000000000001 /* BinPeekApp.swift */,
+				01D000000000000000000006 /* Views */,
+				01D000000000000000000007 /* ViewModels */,
+				01D000000000000000000008 /* Models */,
+				01D000000000000000000009 /* Services */,
+				01B000000000000000000006 /* Assets.xcassets */,
+			);
+			path = BinPeek;
+			sourceTree = "<group>";
+		};
+		01D000000000000000000004 /* BinPeekWidget */ = {
+			isa = PBXGroup;
+			children = (
+				01B000000000000000000007 /* BinPeekWidgetBundle.swift */,
+				01B000000000000000000008 /* BinPeekWidget.swift */,
+				01B000000000000000000012 /* WidgetCollectionItem.swift */,
+				01B000000000000000000013 /* WidgetDisplayState.swift */,
+				01B000000000000000000014 /* WidgetSharedPayload.swift */,
+				01B00000000000000000000C /* Info.plist */,
+				01B000000000000000000009 /* Assets.xcassets */,
+			);
+			path = BinPeekWidget;
+			sourceTree = "<group>";
+		};
+		01D000000000000000000005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01B00000000000000000000B /* BinPeek.app */,
+				01B00000000000000000000A /* BinPeekWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01D000000000000000000006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				01B000000000000000000003 /* HomeView.swift */,
+				01B000000000000000000004 /* AddressView.swift */,
+				01B000000000000000000005 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		01D000000000000000000007 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				01B00000000000000000000D /* HomeViewModel.swift */,
+				01B00000000000000000000E /* AddressViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		01D000000000000000000008 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				01B00000000000000000000F /* CollectionSchedule.swift */,
+				01B000000000000000000010 /* CollectionItem.swift */,
+				01B000000000000000000011 /* CollectionDisplayState.swift */,
+				01B000000000000000000021 /* CollectionCalendarOption.swift */,
+				01B000000000000000000016 /* TorontoOpenDataResource.swift */,
+				01B000000000000000000017 /* TorontoScheduleResource.swift */,
+				01B000000000000000000018 /* TorontoCollectionScheduleRecord.swift */,
+				01B00000000000000000001B /* TorontoCollectionScheduleDTO.swift */,
+				01B00000000000000000001D /* TorontoOpenDataPackageDTO.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		01D000000000000000000009 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				01B000000000000000000002 /* StorageManager.swift */,
+				01B000000000000000000019 /* TorontoScheduleParser.swift */,
+				01B00000000000000000001A /* TorontoOpenDataResourceResolver.swift */,
+				01B00000000000000000001C /* TorontoScheduleRecordsDecoder.swift */,
+				01B00000000000000000001E /* TorontoOpenDataPackageDecoder.swift */,
+				01B00000000000000000001F /* TorontoOpenDataClient.swift */,
+				01B000000000000000000020 /* TorontoScheduleService.swift */,
+				01B000000000000000000022 /* TorontoScheduleRecordFilter.swift */,
+				01B000000000000000000023 /* CollectionScheduleSelector.swift */,
+				01B000000000000000000024 /* SelectedScheduleRefreshService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01E000000000000000000001 /* BinPeek */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01G000000000000000000001 /* Build configuration list for PBXNativeTarget "BinPeek" */;
+			buildPhases = (
+				01F000000000000000000004 /* Sources */,
+				01F000000000000000000002 /* Frameworks */,
+				01F000000000000000000005 /* Resources */,
+				01F000000000000000000001 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01H000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = BinPeek;
+			productName = BinPeek;
+			productReference = 01B00000000000000000000B /* BinPeek.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01E000000000000000000002 /* BinPeekWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01G000000000000000000002 /* Build configuration list for PBXNativeTarget "BinPeekWidget" */;
+			buildPhases = (
+				01F000000000000000000006 /* Sources */,
+				01F000000000000000000003 /* Frameworks */,
+				01F000000000000000000007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BinPeekWidget;
+			productName = BinPeekWidget;
+			productReference = 01B00000000000000000000A /* BinPeekWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01D000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					01E000000000000000000001 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					01E000000000000000000002 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 01G000000000000000000003 /* Build configuration list for PBXProject "BinPeek" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01D000000000000000000002;
+			productRefGroup = 01D000000000000000000005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01E000000000000000000001 /* BinPeek */,
+				01E000000000000000000002 /* BinPeekWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01F000000000000000000005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01A000000000000000000006 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01F000000000000000000007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01A000000000000000000009 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01F000000000000000000004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01A000000000000000000001 /* BinPeekApp.swift in Sources */,
+				01A000000000000000000002 /* StorageManager.swift in Sources */,
+				01A000000000000000000003 /* HomeView.swift in Sources */,
+				01A000000000000000000004 /* AddressView.swift in Sources */,
+				01A000000000000000000005 /* SettingsView.swift in Sources */,
+				01A00000000000000000000B /* HomeViewModel.swift in Sources */,
+				01A00000000000000000000C /* AddressViewModel.swift in Sources */,
+				01A00000000000000000000D /* CollectionSchedule.swift in Sources */,
+				01A00000000000000000000E /* CollectionItem.swift in Sources */,
+				01A00000000000000000000F /* CollectionDisplayState.swift in Sources */,
+				01A000000000000000000013 /* SharedConstants.swift in Sources */,
+				01A000000000000000000015 /* TorontoOpenDataResource.swift in Sources */,
+				01A000000000000000000016 /* TorontoScheduleResource.swift in Sources */,
+				01A000000000000000000017 /* TorontoCollectionScheduleRecord.swift in Sources */,
+				01A000000000000000000018 /* TorontoScheduleParser.swift in Sources */,
+				01A000000000000000000019 /* TorontoOpenDataResourceResolver.swift in Sources */,
+				01A00000000000000000001A /* TorontoCollectionScheduleDTO.swift in Sources */,
+				01A00000000000000000001B /* TorontoScheduleRecordsDecoder.swift in Sources */,
+				01A00000000000000000001C /* TorontoOpenDataPackageDTO.swift in Sources */,
+				01A00000000000000000001D /* TorontoOpenDataPackageDecoder.swift in Sources */,
+				01A00000000000000000001E /* TorontoOpenDataClient.swift in Sources */,
+				01A00000000000000000001F /* TorontoScheduleService.swift in Sources */,
+				01A000000000000000000020 /* CollectionCalendarOption.swift in Sources */,
+				01A000000000000000000021 /* TorontoScheduleRecordFilter.swift in Sources */,
+				01A000000000000000000022 /* CollectionScheduleSelector.swift in Sources */,
+				01A000000000000000000023 /* SelectedScheduleRefreshService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01F000000000000000000006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01A000000000000000000007 /* BinPeekWidgetBundle.swift in Sources */,
+				01A000000000000000000008 /* BinPeekWidget.swift in Sources */,
+				01A000000000000000000010 /* WidgetCollectionItem.swift in Sources */,
+				01A000000000000000000011 /* WidgetDisplayState.swift in Sources */,
+				01A000000000000000000012 /* WidgetSharedPayload.swift in Sources */,
+				01A000000000000000000014 /* SharedConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01H000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01E000000000000000000002 /* BinPeekWidget */;
+			targetProxy = 01C000000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01I000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		01I000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01I000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BinPeek;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.binpeek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01I000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BinPeek;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.binpeek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		01I000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BinPeekWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.binpeek.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01I000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BinPeekWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.binpeek.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01G000000000000000000001 /* Build configuration list for PBXNativeTarget "BinPeek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01I000000000000000000003 /* Debug */,
+				01I000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01G000000000000000000002 /* Build configuration list for PBXNativeTarget "BinPeekWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01I000000000000000000005 /* Debug */,
+				01I000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01G000000000000000000003 /* Build configuration list for PBXProject "BinPeek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01I000000000000000000001 /* Debug */,
+				01I000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01D000000000000000000001 /* Project object */;
+}
